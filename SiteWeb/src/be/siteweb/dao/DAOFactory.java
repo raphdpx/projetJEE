@@ -3,7 +3,7 @@ package be.siteweb.dao;
 import java.sql.Connection;
 
 public class DAOFactory {
-	protected static final Connection con = DAOConnection.getInstance(); //Ajouter la classe de connection 
+	protected static final Connection con = DAOConnection.getInstance();
 	
 	public static DAO getCategoryDAO() {
 		return new DAO_Category(con);

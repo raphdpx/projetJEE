@@ -14,8 +14,8 @@ public class DAOConnection {
 	public DAOConnection() {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			String url = "jdbc:oracle:thin:@char-oracle11.condorcet.be:1521:xe";
-			instance = DriverManager.getConnection(url, "ora32", "oracle3");
+			String url = "jdbc:oracle:thin:@localhost:1521:xe";
+			instance = DriverManager.getConnection(url, "ora32", "oracle3"); //A modifier quand la DB sera faite
 		} catch (ClassNotFoundException ex) {
 			JOptionPane.showMessageDialog(null, "Classe de driver introuvable" + ex.getMessage());
 			System.exit(0);
