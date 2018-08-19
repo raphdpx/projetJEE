@@ -1,6 +1,9 @@
 package be.siteweb.pojo;
 
-public class CUser {
+import java.io.Serializable;
+
+public class CUser implements Serializable  {
+	private static final long serialVersionUID = -8003786218790389352L;
 	private int id;
 	private String login;
 	private String password;

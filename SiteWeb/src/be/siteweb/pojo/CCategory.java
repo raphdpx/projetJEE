@@ -1,6 +1,8 @@
 package be.siteweb.pojo;
 
-public class CCategory{
+import java.io.Serializable;
+
+public class CCategory implements Serializable {
 	private int id;
 	private CSport sport;
 	private String name;

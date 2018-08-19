@@ -1,6 +1,8 @@
 package be.siteweb.pojo;
 
-public class CSport {
+import java.io.Serializable;
+
+public class CSport implements Serializable  {
 	private int id;
 	private String name;
 	

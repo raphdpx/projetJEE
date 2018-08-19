@@ -1,12 +1,13 @@
 package be.siteweb.pojo;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class CRecord {
+public class CRecord implements Serializable {
 	private int id;
 	private CCategory category;
 	private CUser user;
-	private Date time;
+	private double time;
 	private Date date;
 	
 	public CRecord() {}
@@ -29,10 +30,10 @@ public class CRecord {
 	public void setUser(CUser user) {
 		this.user = user;
 	}
-	public Date getTime() {
+	public double getTime() {
 		return time;
 	}
-	public void setTime(Date time) {
+	public void setTime(double time) {
 		this.time = time;
 	}
 	public Date getDate() {
