@@ -1,0 +1,18 @@
+/* AUTOMATICALLY GENERATED ON Sat Aug 18 14:54:46 CEST 2018*/
+/* DO NOT EDIT */
+
+grant {
+  permission javax.security.jacc.WebUserDataPermission "/";
+  permission javax.security.jacc.WebResourcePermission "/";
+};
+
+grant      principal * * {
+  permission javax.security.jacc.WebRoleRefPermission "Test", "**";
+  permission javax.security.jacc.WebRoleRefPermission "Accueil", "**";
+  permission javax.security.jacc.WebRoleRefPermission "jsp", "**";
+  permission javax.security.jacc.WebRoleRefPermission "", "**";
+  permission javax.security.jacc.WebRoleRefPermission "be.raph.servlets.Test", "**";
+  permission javax.security.jacc.WebRoleRefPermission "be.raph.servlets.Accueil", "**";
+  permission javax.security.jacc.WebRoleRefPermission "default", "**";
+};
+
