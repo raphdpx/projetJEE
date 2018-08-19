@@ -3,6 +3,7 @@ package be.siteweb.pojo;
 import java.io.Serializable;
 
 public class CSport implements Serializable  {
+	private static final long serialVersionUID = 5537701472026921888L;
 	private int id;
 	private String name;
 	

@@ -4,6 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 public class CRecord implements Serializable {
+	private static final long serialVersionUID = 4850028086608386300L;
 	private int id;
 	private CCategory category;
 	private CUser user;
